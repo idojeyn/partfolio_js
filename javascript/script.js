@@ -236,6 +236,13 @@ function showStatusMessage(message) {
 function showSidebar() {
   const sidebar = document.querySelector('.sidebar')
   sidebar.style.display = 'flex'
+  sidebar.addEventListener('click', event=>{
+    if(event.target.classList.contains('btn')){
+      setTimeout(() => {
+        sidebar.style.display='none'
+      }, 300);
+    }
+  })
   document.body.classList.add('noscroll')
 }
 function hideSidebar() {
