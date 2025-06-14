@@ -17,8 +17,17 @@
     <header>
         <div class="container">
             <a class="logo" href="index.html">Flowors.</a>
-            <ul class="links">
-                <li><a href="#index">Home</a></li>
+            <ul class="links ">
+                <li class="hideMobile"><a href="index.html">Home</a></li>
+                <li class="hideMobile"><a href="#cotalik">Catalog</a></li>
+                <li class="hideMobile"><a href="#about_us">About Us</a></li>
+                <li class="hideMobile"><a href="#ofis">Map</a></li>
+                <li class="hideMobile"><a href="#contact">Contact</a></li>
+                <li class="menu-button" onclick="showSidebar()"><i class="fas fa-bars"></i></li>
+            </ul>
+            <ul class="sidebar">
+                <li><i class="fas fa-xmark" onclick="hideSidebar()"></i></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#cotalik">Catalog</a></li>
                 <li><a href="#about_us">About Us</a></li>
                 <li><a href="#ofis">Map</a></li>

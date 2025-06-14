@@ -232,3 +232,14 @@ function showStatusMessage(message) {
     statusModal.remove()
   }, 4000)
 }
+
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+  document.body.classList.add('noscroll')
+}
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+  document.body.classList.remove('noscroll')
+}
