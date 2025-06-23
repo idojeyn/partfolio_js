@@ -176,6 +176,8 @@ function setClock(selector, endtime) {
 }
 setClock('.timer', deadline)
 
+// telegtam botga contactni ulash
+
 const form = document.querySelector('form'),
   telegramTokenBot = "7677562356:AAE9y_2TCRs79Vj6fEmO4vzjWRcCx1q6XM0",
   chatId = '6221497201'
@@ -221,7 +223,7 @@ form.addEventListener('submit', event => {
         .finally(() => form.value.remove())
     })
 })
-
+// telegram
 function showStatusMessage(message) {
   const statusModal = document.createElement('div')
   statusModal.classList.add('modal__dialog')
